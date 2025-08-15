@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    color: #1e1e1e;
+    background-color: #ffffff;
+    font: 16px;
+    border-top: 4px solid #009cde;
+}
+
+
+.row1{
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+
+.row2{
+    display: flex;
+    width: 100%;
+    background-color: #1e1e1e;
+}
+.toggle-btn{
+    cursor: pointer;
+    color: #1e1e1e;
+    font-size: 20px;
+}
+.logo{
+    display: flex; 
+}
+.SAT-logo{
+    display: flex;
+    border: 1px solid #009cde;
+    background-color: #009cde;
+    width: 132.22px;
+    height: 44.5px;
+    justify-content: center;
+    align-items: center;
+}
+.SAT-logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-family: "CBW Icons Logo 4_8_0";
+    font-weight: 700;
+}
+.sign-search{
+    width: 500px;
+    display: flex;
+    gap: 100px;
+}
+.col-md-1{
+    margin: 0px 0px 0px 4px; 
+    padding: 0px 4px;
+}
+.sign-in{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.button1{
+    color: #1e1e1e;
+    font: 14px  sans-serif;
+    font-weight: 700;
+    margin: 0px 8px 0px 0px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    border-bottom: 3px solid #1e1e1e;
+    background-color: #ffffff;
+    color: #b2b2b2;
+    margin: 0px 0px 0px 20px;
+}
+.button2{
+    font: 14px sans-serif;
+    padding: 3px 15px; 
+    margin: 5px 0px 5px -50px;
+}
+.bibi-search{
+    padding: 1px 6px;
+    margin: 5px 50px 5px 0px;
+}
+.row2 .col-md-3{
+    flex: 1;
+    padding: 15px;
+}
+.droptown1{
+    border-top: 4px solid #007ACC;
+    padding-top: 10px;
+}
+.droptown2{
+    border-top: 4px solid #3A5FC9;
+    padding-top: 10px;
+}
+.droptown3{
+    border-top: 4px solid #7D3C98;
+    padding-top: 10px;
+}
+.droptown4{
+    border-top: 4px solid #FFFFFF;
+    padding-top: 10px;
+}
+.droptown1 a, .droptown2 a, .droptown3 a{
+    color: #ffffff;
+    font: 16px bold;
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+.droptown4 a{
+    color: #d9d9d9;
+    font: 14px sans-serif;
+    text-decoration: none;
+}
+.droptown-small a:hover, .droptown4 a:hover{
+    text-decoration: underline;
+}
+.droptown1 li, .droptown2 li, .droptown3 li, .droptown4 li, .droptown-small li{
+    list-style-type: none;
+}
+.droptown1 li:hover, .droptown2 li:hover, .droptown3 li:hover, .droptown4 li:hover, .droptown-small li:hover{
+    list-style-type: square;
+}
+.droptown-small ul{
+    list-style: none;
+    margin-left: 15px;
+    border-left: 1px dashed #aaa;
+    padding-left: 10px;
+}
+.droptown-small a{
+    font-size: 14px;
+    color: #d9d9d9;
+}
+
+
+
+.container1{
+    height: 72px;
+    font: 16px "Roboto, sans-serif";
+    background-color: #ffffff;
+}
+.row3{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0 32.5px; 
+    padding: 0 24px;
+}
+.navigation{
+    font: 23px "Roboto, sans-serif";
+    padding: 36px 24px 12px 0;
+}
+.navigation a{
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 530;
+}
+.navigation a:hover{
+    text-decoration: underline;
+}
+
+
+.timeline-section {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.timeline-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 2rem;
+  scrollbar-width: thin;
+}
+
+.timeline-track {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #ccc;
+}
+
+.timeline-item {
+  position: relative;
+  min-width: 280px;
+  margin-right: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 2.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: #888;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.card-time {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.card-actions a {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+.outline-btn {
+  border: 1px solid black;
+  background: none;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container6 {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 0;
+}
+.top {
+    background-color: #fedb00;
+    text-align: right;
+    padding: 10px 15px;
+}
+.top a {
+    color: #1e1e1e;
+    text-decoration: none;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    gap: 20px;
+}
+.col-md-3 {
+    flex: 1 1 200px;
+}
+.col-md-3 h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+.droptown ul {
+    list-style: none;
+}
+.droptown ul li {
+    margin: 6px 0;
+}
+.droptown ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+.droptown ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.footer-bottom p{
+    background-color: #fff;
+    color: #1e1e1e;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px 20px;
+    margin: 10px 35px;
+    font-family: "Roboto, sans-serif";
+}
+.timeline-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.timeline-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    scrollbar-width: thin;
+}
+
+.timeline-track {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ccc;
+}
+
+.timeline-item {
+    position: relative;
+    min-width: 280px;
+    margin-right: 2rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 2.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #888;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-date, .card-time {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.card-actions a {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.outline-btn {
+    border: 1px solid black;
+    background: none;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container6 {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 0;
+}
+.top {
+    background-color: #fedb00;
+    text-align: right;
+    padding: 10px 15px;
+}
+.top a {
+    color: #1e1e1e;
+    text-decoration: none;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    gap: 20px;
+}
+.col-md-3 {
+    flex: 1 1 200px;
+}
+.col-md-3 h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+.droptown ul {
+    list-style: none;
+}
+.droptown ul li {
+    margin: 6px 0;
+}
+.droptown ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+.droptown ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.footer-bottom p{
+    background-color: #fff;
+    color: #1e1e1e;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px 20px;
+    margin: 10px 35px;
+    font-family: "Roboto, sans-serif";
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.container4, .container5, .container6 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.row6, .row7 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+.girl img, .boy img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+p.signin, p.ex, p.ax, p.xo {
+    color: #555;
+}
+
+.btn a {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .row6, .row7, .container6 .row8 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn a {
+        width: 80%;
+    }
+}
+.row9{
+    height: 544px;
+    padding: 72px 0;
+    justify-content: center;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+h2{
+    font-size: 40px;
+}
+.edu{
+    display: flex;
+}
+p{
+    font-size: 21px;
+}
